@@ -9,5 +9,8 @@
 - P04-paga-trabajador
 
 ## Actividad 2
-- Programa 3
-- Programa 4
+- P05-promedio-de-calificaciones
+- P06-operaciones-matematicas
+- P07-funciones-trigonometricas
+- P08-dividir-en-cifras
+
