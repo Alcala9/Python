@@ -14,3 +14,16 @@
 - P07-funciones-trigonometricas
 - P08-dividir-en-cifras
 
+## Tarea 1
+- P09-hipotenusa-triangulo
+- P10-tercer-angulo
+- P11-convertir-temperatura
+- P12-volumen-cilindro
+- P13-calculo-tiempo
+- P14-numero-suerte
+
+## Actividad 3
+- P15-verificar-numero
+- P16-verificar-suma
+- P17-convertir-temperaturas
+- P18-paga-trabajador-v2
