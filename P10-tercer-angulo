@@ -1,0 +1,11 @@
+# Calcular el tercer angulo del angulo
+
+print('Calculando el tercer angulo:\n')
+print('Ingresa el angulo1 y angulo2 separados por un Enter')
+
+angulo1  = float(input())
+angulo2  = float(input())
+angulo3 = 180 - (angulo1 + angulo2)
+
+print(f'La figura tiene su tercer angulo de: {angulo3} ')
+

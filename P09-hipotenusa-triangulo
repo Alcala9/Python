@@ -1,0 +1,12 @@
+# Calcular la hipotenusa de un triangulo
+
+print('Calculando la hipotenusa de un triangulo:\n')
+print('Ingresa el lado 1 y lado 2 separados por un Enter')
+
+import math
+
+longlado1  = float(input())
+longlado2  = float(input())
+hipotenusa = math.sqrt( longlado1 * longlado1 + longlado2 * longlado2 )
+
+print(f'El triangulo de lado 1 {longlado1} y lado 2 {longlado2} tiene una hipotenusa de {hipotenusa}')

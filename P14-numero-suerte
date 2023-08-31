@@ -1,0 +1,13 @@
+# Dar el numero de la suerte con el año de nacimiento
+
+import math
+
+print('Dividir en unidades, decenas y centenas un numero entero')
+
+numero   = int(input('En que año nacio: '))
+millar   = math.trunc( numero / 1000 )
+centenas = math.trunc(( numero - millar*1000 )/ 100 )
+decenas  = math.trunc( (numero - (millar*1000 + centenas*100)) / 10 )
+unidades = numero - (millar*1000 + centenas*100 + decenas*10)
+
+print(f'Su numero de la suerte es: {millar+centenas+decenas+unidades}')

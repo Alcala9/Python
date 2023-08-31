@@ -1,0 +1,10 @@
+print('Verificar si un numero entero es positivo, negativo o cero')
+numero = int(input('Dame un numero ? '))
+if numero > 0 :
+    print('\nEl numero es positivo')
+if numero < 0 :
+    print('\nEl numero es negativo')
+if numero == 0 :
+    print('\nEl numero es cero')
+
+print("\nProceso terminado")

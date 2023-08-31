@@ -1,0 +1,11 @@
+# Sacar la cantidad de horas en su equivalente en dias, minutos y segundos
+
+print('Calculando la cantidad de dias, minutos y segundos a partir de horas\n')
+
+Horas    = float(input('Dame la hora: '))
+Dias     = float (Horas / 24 )
+Minutos  = int   (Horas * 60 )
+Segundos = int   (Minutos * 60)
+
+print(f'Las horas ingresadas son: {Horas}\nLos dias de esas horas son: {Dias}\nLos minutos de esas horas son {Minutos}\nLos Segundos de esas horas son {Segundos}')
+

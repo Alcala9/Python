@@ -1,0 +1,12 @@
+# Sacar el volumen de un cilindro
+
+print('Sacando el volumen de un cilindro:\n')
+print('Ingresa el Radio y Altura del cilindro separasdos por un Enter')
+
+import math
+
+Radio   = float(input())
+Altura  = float(input())
+Volumen = math.pi * (Radio * Radio) * Altura 
+
+print(f'El volumen del cilindro es: {Volumen} ')

@@ -1,0 +1,12 @@
+#Verificar si la suma de dos numeros es igual a un tercero
+
+print("Verififica si la suma de dos numeros es igual a un tercero \n")
+
+x, y, c = int(input("Dame un numero: ")), int(input("Dame otro numero: ")), int(input("Dame un tercer numero: ")) 
+
+if x + y > c:
+    print('La suma de los valores es mayor que c ')
+else:
+    print('La suma de los valores no es mayor que c')
+
+print("Se termino el proceso")
