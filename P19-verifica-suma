@@ -1,0 +1,25 @@
+# verificar si la suma de dos numeros es igual a un terecero
+# 4 5 9  5 9 4  4 9 5  3 3 3  6 6 7
+
+print('Verificar si la suma de dos numeros es igual a un tercero')
+print('Dame 3 numeros enteros separados por espacio?')
+
+n1, n2, n3 = input().split()
+n1, n2, n3 = [int(n1), int(n2), int(n3)]
+
+if n1 + n2 == n3:
+    print('n1 + n2 = n3')
+
+elif n1 + n3 == n2:           #El "el 2lif" e si no, lo usaremos como si fuera un switch/case
+    print('n1 + n3 = n2')
+
+elif n2 + n3 == n1:
+    print('n2 + n3 = n1')
+
+elif n1 == n2 == n3:
+    print ("son iguales")
+
+else:
+    print('Hay  dos iguales, o todos son diferentes')
+
+print("\nProceso terminado")

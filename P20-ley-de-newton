@@ -1,0 +1,36 @@
+# segunda ley de newton (fuerza = masa * aceleracion)
+import os
+os.system("cls")
+
+
+print('Calculando los valores de lasegunda ley de newton')
+print('[F]uerza  f = m * a ')
+print('[M]asa m = f / a')
+print('[A]celeracion a = f / a')
+op = input('\nElige una opcion ? ').upper()
+
+if op=="F":
+    print('\nCalculando la fuerza ..')
+    m = float(input('Dame la masa? '))
+    a = float(input('Dame la aceleración? '))
+    f = m * a
+    print(f'la fuerza es {f:2f}') #el resultado sale en float con 2 decimales
+
+elif op=="M":
+    print('\ncalculando la masa ..')
+    f = int(input('dame la fuerza? '))
+    a = int(input('dame la aceleración? '))
+    m = f / a
+    print(f'la mase es {m:2f}')
+
+elif op=="A":
+    print('\ncalculando la aceleración ..')
+    f = int(input('dame la fuerza? '))
+    m = int(input('dame la masaa? '))
+    a = f / m
+    print(f'la aceleración es {a:2f}')
+
+else :
+    print('Opcion invalida !!')
+
+print("\nProceso terminado")

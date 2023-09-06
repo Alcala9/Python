@@ -1,0 +1,20 @@
+# aceptar estudiante en base a cierto criterios
+import os
+os.system("cls")
+
+print('Universidad Patito SA de CV')
+nombre = input('dame tu nombre > ')
+edad = int(input('dame tu edad > '))
+
+if edad >= 18 :
+    print('Continuamos...')
+    print('Dame 2 calificaciones separados por un Enter')
+    c1, c2 = int(input()), int(input())
+
+    if c1 >=8 and c2>=8:
+            print(f"{nombre} bienvenid@ tus calificaciones son {c1} y {c2}")
+    else :
+        print('Solo aceptamos calificaciones mayores a 8 ')
+              
+else:
+    print('solo aceptamos alumnos con calificaciones mayores a 8')
