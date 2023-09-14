@@ -1,0 +1,23 @@
+# Calcular el promedio de 5 calificaciones y evaluarlas para dar un resultadp
+
+n1 = int(input('\nDame un numero entre el 1 y 10 para saber tu resultado '))
+
+if n1 > 0 and n1 <= 6  :
+    print("Quedas reprobado")
+
+elif n1 > 6 and n1 <= 7 :
+    print("Pasas de panzazo")
+
+elif n1 > 7 and n1 <= 8:
+    print("Muy bien, puesdes mejorar")
+
+elif n1 > 8 and n1 <= 9:
+    print("Excelente sigue así")
+
+elif n1 > 9 and n1 <=10:
+    print("Perfecto tu esfuerzo valió la pena")
+
+else:
+    print("\nEl maximo es 10")
+
+print("\nProceso terminado")

@@ -1,0 +1,33 @@
+# Dado un numero entero entre 1 y 7, se desea mostrar con letra el día de la semana correspondiente.
+
+
+n1 = int(input('\nDame un numero entre el 1 y 7 para conocer el dia de la semana '))
+
+if n1 == 1:
+    print("El dia es Domingo")
+
+elif n1 == 2:
+    print("El dia es Lunes")
+
+elif n1 == 3:
+    print("El dia es Martes")
+
+elif n1 == 4:
+    print("El dia es Miercoles")
+
+elif n1 == 5:
+    print("El dia es Jueves")
+
+elif n1 == 6:
+    print("El dia es Viernes")
+
+elif n1 == 7:
+    print("El dia es Sabado")
+
+else:
+    print("\nEl numero dado no corresponde a un dia de la semana")
+
+print("\nProceso terminado")
+
+
+

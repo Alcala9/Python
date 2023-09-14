@@ -1,0 +1,22 @@
+# Dado el nombre del estudiante, sexo (h/m), su edad y tres calificaciones, decidir si el estudiante es aceptado.
+
+sexo = (input('\nTu sexo es H o M? ')).upper()
+edad = int(input('\nTu edad es: '))
+Calificacion1,Calificacion2,Calificacion3 = float(input('\nDame una calificacion ')),float(input('\nDame una calificacion ')),float(input('\nDame una calificacion '))
+prom = Calificacion1 + Calificacion2 + Calificacion3 
+prom2 = prom / 3
+
+
+if sexo == "M":
+    if edad > 21:
+        if prom2 >= 8 and prom2 <= 9.5  :
+            print("Felicidades, cumples los requisitos para entrar")   
+        else:     
+            print("\nLo sentimos, tu propmedio debe estar entre 8 y 9.5")    
+    else:
+        print("\nLo sentimos, Solo aceptamos mayores de 21")
+else:
+    print("\nLo sentimos, Solo aceptamos mujeres")
+
+
+print("\nProceso terminado")

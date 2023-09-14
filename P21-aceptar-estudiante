@@ -18,3 +18,5 @@ if edad >= 18 :
               
 else:
     print('solo aceptamos alumnos con calificaciones mayores a 8')
+
+    

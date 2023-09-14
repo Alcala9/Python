@@ -1,0 +1,38 @@
+# Realizar un programa que pida un número entre 1 y 10 y muestre su equivalente en número romano
+
+n1 = int(input('\nDame un numero entre el 1 y 10 para conocer su equivalente en numero romano '))
+
+if n1 == 1:
+    print("Su equivalente es: I")
+
+elif n1 == 2:
+    print("Su equivalente es: II")
+
+elif n1 == 3:
+    print("Su equivalente es: III")
+
+elif n1 == 4:
+    print("Su equivalente es: IV")
+
+elif n1 == 5:
+    print("Su equivalente es: V")
+
+elif n1 == 6:
+    print("Su equivalente es: VI")
+
+elif n1 == 7:
+    print("Su equivalente es: VII")
+
+elif n1 == 8:
+    print("Su equivalente es: VIII")
+
+elif n1 == 9:
+    print("Su equivalente es: IX")
+
+elif n1 == 10:
+    print("Su equivalente es: X")
+
+else:
+    print("\nEl numero dado no corresponde a uno entre 1 y 10")
+
+print("\nProceso terminado")

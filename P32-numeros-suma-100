@@ -1,0 +1,16 @@
+# Imprimir los numeros del 1 al 200 hasta alcanzar la suma de 100
+
+c = 0   #?
+s = 0   #100
+
+while c < 200 :
+    c = c + 1
+    s = s + c
+    print(c, end=" ")
+    if s >= 500:
+        print()
+        break         #alcanzar un numero y nos salimos
+
+print(f"Hemos alcanzado la antidad limite {s}, sumando {c} numeros")
+
+

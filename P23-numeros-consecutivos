@@ -1,0 +1,15 @@
+# Dados tres números enteros, verificar si son consecutivos (9,10,11) y mandar mensaje confirmándolo, si no lo son (1,4,6)mandar mensaje de error.
+
+print('Verificar si tres numeros son consecutivos')
+n1 = int(input('Dame un numero ? '))
+n2 = int(input('Dame otro numero diferente ? '))
+n3 = int(input('Dame otro numero diferente ? '))
+
+
+if n1 == n2+1 == n2+2  and n1 == n2-1 == n3-2 :
+    print("n1 y n2 y n3 son consecutivos")
+else:
+    print("n1 y n2 y n3 no son consecutivos")
+
+
+print("\nProceso terminado")

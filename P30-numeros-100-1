@@ -1,0 +1,6 @@
+# Imprimir los numeros del 1 al 100 de 1 en 1
+
+c = 100
+while c >= 1 :
+    print (c, end ="")
+    c = c - 1

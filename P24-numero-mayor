@@ -1,0 +1,23 @@
+# Dados tres números enteros, verificar cual es el mayor.
+
+print('Verificar cual de 3 numeros es mayor')
+n1 = int(input('Dame un numero ? '))
+n2 = int(input('Dame otro numero diferente ? '))
+n3 = int(input('Dame otro numero diferente ? '))
+
+
+if n1 > n2 and n1 > n3 :
+    print("n1 es mayor a todos")
+
+if n2 > n1 and n2 > n3 :
+    print("n2 es mayor a todos")
+
+if n3 > n1 and n3 > n2 :
+    print("n2 es mayor a todos")
+
+
+else:
+    print("Pueden ser iguales")
+
+
+print("\nProceso terminado")
