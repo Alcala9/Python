@@ -1,0 +1,24 @@
+# 
+import os
+
+while(True):
+
+    os.system("cls")
+    temp1 = int(input("Dame una temperatura de inicio en °c: "))
+    temp2 = int(input("Dame una temperatura de fin en °c: "))
+    
+    temp1 = ( temp1 * 9 / 5 ) + 31
+    temp2 = (temp2 * 9 / 5  ) + 31 
+
+    while temp1 <=  temp2 :
+        temp1 = temp1 + 1
+        
+        print(f"La temperatura en fare es {temp1}")
+ 
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")

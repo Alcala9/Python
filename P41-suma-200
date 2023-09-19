@@ -1,0 +1,23 @@
+# Suma todos los numeros que capture el usuario hasta llegar a 200
+import os
+
+while(True):
+
+    os.system("cls")
+    c = 0
+    suma = 0
+   
+
+    while c <=  200 :
+        c = int(input("Dame un numero? "))
+        suma = suma + c  
+        c = c + suma
+    print(f"La suma es {suma}")
+ 
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")

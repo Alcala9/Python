@@ -1,0 +1,24 @@
+# Calcular el número mayor de una serie de números introducidos por el teclado,
+
+import os
+
+while(True):
+
+    os.system("cls")
+    c = 1
+    mayor = 0
+
+    while c !=  0 :
+        c = int(input("Dame un numero? "))
+        if c > mayor:
+            mayor = c
+
+    print(f"El numero mayor es: {mayor}")
+ 
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")

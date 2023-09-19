@@ -1,0 +1,25 @@
+# Suma y promedia todos los numeros que el usuario agregue hasta poner 0
+import os
+
+while(True):
+
+    os.system("cls")
+    c = 1
+    suma = 0
+    conta = -1
+
+    while c !=  0 :
+        c = int(input("Dame un numero? "))
+        suma = suma + c
+        conta = conta + 1
+        
+
+    print(f"La suma es {suma}")
+    print(f"El promedio es {suma / conta}")
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")

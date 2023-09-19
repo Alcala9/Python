@@ -1,0 +1,23 @@
+# Imprime los numeros pares desendentes 
+import os
+
+while(True):
+
+    os.system("cls")
+    c = 100
+    suma = 0
+
+    while 0 < c :
+        print(f"{c}")
+        suma = suma + c
+        c = c - 2
+        
+
+    print(f"La suma es {suma}")
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")

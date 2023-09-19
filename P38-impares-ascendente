@@ -1,0 +1,24 @@
+# Imprime los numeros impares asendentemente 
+import os
+
+while(True):
+
+    os.system("cls")
+    n = int(input("Hasta donde quiere? "))
+    c = 1
+    suma = 0
+
+    while c <= n :
+        print(f"{c}")
+        suma = suma + c
+        c = c + 2
+        
+
+    print(f"La suma es {suma}")
+
+    res = input("Deseas continuar (S/N)?").upper()
+    if res == "N":
+        break
+
+
+print("\nProceso Terminado")
