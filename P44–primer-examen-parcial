@@ -2,18 +2,16 @@
 import os
 
 while(True):
-
         os.system("cls")
 
         print("Universidad Patito SA de CV.")
         print("Sistema de Inscripción Congreso de Sistemas")
 
-        tipousuario = int(input("\n[1] Alumno $100, [2] Trabajador $200, [3] Docente $500 ? "))
-        tipopaquete = int(input("[1] Solo conferencias $600, [2] Con eventos sociales $800, [3] Con kit de acceso $900 ? "))
-        cantidad = int(input("Cantidad de paquetes? "))
+
         subtotal = 0
         descuento = 0
         total = 0
+        cuenta = 0 
         a = 100
         t = 200
         d = 500
@@ -21,87 +19,94 @@ while(True):
         ces = 800
         ckda = 900
 
-        total = subtotal - descuento
+        while cuenta < 100000000000:
+                tipousuario = int(input("\n[1] Alumno $100, [2] Trabajador $200, [3] Docente $500 ? "))
+                tipopaquete = int(input("[1] Solo conferencias $600, [2] Con eventos sociales $800, [3] Con kit de acceso $900 ? "))
+                cantidad = int(input("Cantidad de paquetes? "))
+                
         # Alumno
-        if tipousuario == 1 and tipopaquete == 1 :
-                tipousuario = "Alumno"
-                tipopaquete = "Solo conferencia"
-                subtotal = (a + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.20
-                total = subtotal - descuento
-        
-        if tipousuario == 1 and tipopaquete == 2 :
-                tipousuario = "Alumno"
-                tipopaquete = "Con evento social"
-                subtotal = (a + sc) * cantidad
-                if subtotal > 5000:
-                 descuento = subtotal * 0.20
-                total = subtotal - descuento
+                if tipousuario == 1 and tipopaquete == 1 :
+                        tipousuario = "Alumno"
+                        tipopaquete = "Solo conferencia"
+                        subtotal = (a + sc) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.20
+                        total = subtotal - descuento
+                        
+                if tipousuario == 1 and tipopaquete == 2 :
+                        tipousuario = "Alumno"
+                        tipopaquete = "Con evento social"
+                        subtotal = (a + ces) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.20
+                        total = subtotal - descuento
 
-        if tipousuario == 1 and tipopaquete == 3 :
-                tipousuario = "Alumno"
-                tipopaquete = "Con kit de acceso"
-                subtotal = (a + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.20
-                total = subtotal - descuento
+                if tipousuario == 1 and tipopaquete == 3 :
+                        tipousuario = "Alumno"
+                        tipopaquete = "Con kit de acceso"
+                        subtotal = (a + ckda) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.20
+                        total = subtotal - descuento
 
         ## Trabajador
-        if tipousuario == 2 and tipopaquete == 1 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Solo conferencia"
-                subtotal = (t + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.10
-                total = subtotal - descuento
+                if tipousuario == 2 and tipopaquete == 1 :
+                        tipousuario = "Trabajador"
+                        tipopaquete = "Solo conferencia"
+                        subtotal = (t + sc) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.10
+                        total = subtotal - descuento
 
-        if tipousuario == 2 and tipopaquete == 2 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Con evento social"
-                subtotal = (t + ces) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.10
-                total = subtotal - descuento
+                if tipousuario == 2 and tipopaquete == 2 :
+                        tipousuario = "Trabajador"
+                        tipopaquete = "Con evento social"
+                        subtotal = (t + ces) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.10
+                        total = subtotal - descuento
 
-        if tipousuario == 2 and tipopaquete == 3 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Con kit de acces"
-                subtotal = (t + ces) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.10
-                total = subtotal - descuento
+                if tipousuario == 2 and tipopaquete == 3 :
+                        tipousuario = "Trabajador"
+                        tipopaquete = "Con kit de acceso"
+                        subtotal = (t + ckda) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.10
+                        total = subtotal - descuento
 
         # Docente
-        if tipousuario == 3 and tipopaquete == 1 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Solo conferencia"
-                subtotal = (d + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.5
-                total = subtotal - descuento
+                if tipousuario == 3 and tipopaquete == 1 :
+                        tipousuario = "Docente"
+                        tipopaquete = "Solo conferencia"
+                        subtotal = (d + sc) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.05
+                        total = subtotal - descuento
 
-        if tipousuario == 3 and tipopaquete == 2 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Con evento social"
-                subtotal = (d + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.5
-                total = subtotal - descuento
+                if tipousuario == 3 and tipopaquete == 2 :
+                        tipousuario = "Docente"
+                        tipopaquete = "Con evento social"
+                        subtotal = (d + ces) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.05
+                        total = subtotal - descuento
 
-        if tipousuario == 3 and tipopaquete == 3 :
-                tipousuario = "Trabajador"
-                tipopaquete = "Con kit de acces"
-                subtotal = (d + sc) * cantidad
-                if subtotal > 5000:
-                        descuento = subtotal * 0.5
-                total = subtotal - descuento
+                if tipousuario == 3 and tipopaquete == 3 :
+                        tipousuario = "Docente"
+                        tipopaquete = "Con kit de acceso"
+                        subtotal = (d + ckda) * cantidad
+                        if subtotal > 5000:
+                                descuento = subtotal * 0.05
+                        total = subtotal - descuento
+                        
+                print(f"\nTu pedido fue de: {cantidad}, El tipo de usuario fue: {tipousuario}, El tipo de paquete fue: {tipopaquete}")
+                print(f"Tu subotal es de {subtotal} con un descuento de: {descuento} y el total fue de: {total}")
+                cuenta = cuenta + total
         
+                res = input("Deseas continuar (S/N)?").upper()
+                if res == "N":
+                        break
 
-
-        print(f"\nTu pedido fue de: {cantidad}, El tipo de usuario fue: {tipousuario}, El tipo de paquete fue: {tipopaquete}")
-        print(f"Tu subotal es de {subtotal} con un descuento de: {descuento} y el total fue de: {total}")
-
-        rep = input("Deseas continuar (S/N)?").upper()
-        if rep == "N":
-          break
+        print(f"\nTu total de la venta fue: {cuenta}")
+        print("Proceso terminado")
+        break
