@@ -49,7 +49,7 @@
 - P32-numeros-suma-100  
 - P33-conteo-numeros
 
-## Actividad 5
+## Actividad 6
 - P34-tabla-conversion
 - P35-conjetura-collatz
 - P36-tabla-multiplicar
@@ -66,9 +66,16 @@
 ## Examen 1
 - P44–primer-examen-parcial
 
-## Actividad 6
+
 - P45-numeros-1-100
 - P46-numeros-100-1
 - P47-arriba-abajo
 - P48-suma-pares-impares
 - P49-suma-numeros
+
+## Actividad 8
+- P50-factorial
+- P51-tabla-multiplicar
+- P52-tablas-multiplicar-v2
+- P53-piramide-caracter
+- P54-factorial-numeros
