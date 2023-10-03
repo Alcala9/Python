@@ -1,5 +1,7 @@
 # suma de n números introducidos por el usuario:
+import os
 
+os.system("cls")
 print('Suma de n números introducidos por el usuario:')
 cuantos = int(input('Cuantos numeros ? '))
 suma = 0

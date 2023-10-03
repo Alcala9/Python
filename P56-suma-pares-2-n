@@ -1,0 +1,11 @@
+# Numeros pares de 2 a n y su suma
+import os
+
+os.system("cls")
+suma = 0
+n = int(input("Hasta que valror quieres llegar? "))
+for i in range(2,n+1,2):
+    print(f"{i}",end=' ',)
+    suma = suma + i
+
+print (", La suma es =", suma)

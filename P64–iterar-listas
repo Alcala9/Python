@@ -1,0 +1,25 @@
+# Iterar sobre los elementos de la lista
+import os
+os.system('cls')
+
+nums = [2, 4, 6, 8, 10, 12, 14, 16]
+
+for num in nums:
+    print(num, end=" ")     #Mostramos individualmente cada numero
+
+print()
+
+for n in range(len(nums)):  
+    print(nums[n], end=" ")  #Otra forma de mostrar individualmente cada numero
+
+print()
+
+for n in nums:
+    print(n+2, end=" ")      #Toma el numero de la lista y le suma 2
+
+print()
+
+for n in range(len(nums)):   #Toma el numero de la lista y le suma 10
+    print(nums[n]+10, end=" ")
+
+print("\n",nums)

@@ -1,4 +1,7 @@
 # Imprimeme el factoral de un numero
+import os
+
+os.system("cls")
 n = int(input("Dame el numero del cual deseas el factorial? "))
 
 f = 1

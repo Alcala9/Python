@@ -1,0 +1,14 @@
+# Los numeros armonicos en secuencia hasta n
+import os
+from fractions import Fraction
+
+os.system("cls")
+
+suma = float(0) 
+n = int(input("Hasta que valror quieres llegar? "))
+
+for i in range(1,n+1):
+    print(f"{1/i}! ",end=' + ',)
+    suma = suma + (1/i)
+
+print (", La suma es =", suma)
