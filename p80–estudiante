@@ -1,0 +1,27 @@
+# Estudiante
+import os
+os.system('cls')
+
+estudiante = {
+'nombre':'Juan Perez',
+'edad':45,
+'email':'jperez@msn.com',
+'carrera':'Sistemas'
+}
+print(f'\nEl diccionario: \n\n{estudiante}')
+
+estudiante['calificacion']=9.5
+estudiante['email']='juanp@gmail.com'
+print(f'\nDiccionario actualizado: \n\n{estudiante}')
+
+print('\nLas llaves: ')
+for k in estudiante.keys():
+    print(k, end=" ")
+
+print('\nLos valores: ')
+for v in estudiante.values():
+    print(v, end=" ")
+
+print("\nLlaves y valores:\n")
+for k,v in estudiante.items():
+    print(f'{k:<12} : {v}')         #Es para darle 12 espacios 

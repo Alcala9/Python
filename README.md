@@ -93,3 +93,21 @@
 - P62–agregar-lista
 - P63–remover-lista
 - P64–iterar-listas
+
+## Tarea 5 
+- P65-acceder-lista
+- P66-modifcar-lista
+- P67-remover-lista
+- P68-lista-promedio
+
+## Actividad 10
+- p80–estudiante
+- p81–calificaciones
+- p82–nombres y edades
+
+## Tarea 6
+- p83-crear-acceder-diccionario
+- p84-modificar-diccionario
+- p85-agregar-diccionario
+- p86-eliminar-diccionario
+- p87-procesar-diccionario

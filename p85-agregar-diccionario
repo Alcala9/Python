@@ -1,0 +1,13 @@
+# Agregar elementos a un diccionario 
+import os
+os.system('cls')
+
+Ventas = {"Juan":"1550,", "Jose":"2600,", "Maria":"2220"}
+print(f'Lista de ventas: \n{Ventas}\n')
+
+                                #Agregar los siguientes elementos al diccionario:
+Ventas['Rocio']=2500            #Elemento Rocio - 2500 usando []
+Ventas['Mateo']=1567            #Elemento: Mateo - 1567 usando []
+Ventas.update({'Andrea':9567})  #Elemento: Andrea - 9567 usando update()
+Ventas.update({'Miguel':1234})  #Elemento: Miguel - 1234 usando update()
+print(f"\nDiccionario de ventas actualizado: ",Ventas) 

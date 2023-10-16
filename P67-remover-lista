@@ -1,0 +1,23 @@
+# Remover elementos de la lista
+import os
+os.system('cls')
+
+nums = [100,123,456,222,999,895,325,234,322,988]
+print(nums, len(nums))
+
+del nums[0]
+del nums[0] 
+del nums[0] 
+print(nums, len(nums))
+
+nums.remove(322)
+nums.remove(988)
+print(nums, len(nums))
+
+nums.pop(0)
+nums.pop()
+print(nums, len(nums))
+
+nums.clear()
+print(nums, len(nums))
+

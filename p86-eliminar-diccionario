@@ -1,0 +1,20 @@
+# Eliminar elementos a un diccionario 
+import os
+os.system('cls')
+
+Municipios = {"Apozol":"1863", "Calera":"1868", "Fresnillo":"1554", "Guadalupe":"1821", "Jalpa":"1824", "Jerez":"1824", "Loreto":"1931",
+"Mazapil":"1824", "Momax":"1857"}
+print(f'Lista de municipios: \n{Municipios}\n')
+
+                                        #Eliminar los elementos siguientes,
+del Municipios['Apozol']                #Llave Apozol usando del
+print(Municipios,len(Municipios),"\n")  
+
+Municipios.pop('Fresnillo')             #Llave Fresnillo usando pop()
+print(Municipios,len(Municipios),"\n") 
+
+Municipios.popitem()                    #Llave Momax usando popitem()
+print(Municipios,len(Municipios),"\n") 
+
+Municipios.clear()                      #Borrar todos los elementos del diccionario con clear()
+print(f"\nDiccionario de municiopios actualizado: ",Municipios) 

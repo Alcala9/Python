@@ -1,0 +1,24 @@
+# Modificar un diccionario 
+import os
+os.system('cls')
+
+Paises = {"Argentina":"100", "Brasil":"200", "Colombia":"300", "Chile":"400", "Ecuador":"500", "Bolivia":"600", "Jamaica":"700"}
+print(f'Lista de Paises : \n{Paises}\n')
+
+
+Paises['Brasil']=250                  #Modifique la llave Brasil por 250 usando []
+Paises['Chile']=450                   #Modifique la llave Chile por 450 usando []
+Paises.update({'Bolivia':650})        #Modifique la llave Bolivia por 650 usando update()
+Paises.update({'Jamaica':750})        #Modifique la llave Jamaica por 750 usando update()
+print(f"\nDiccionario se actualizo actualizado: ",Paises) 
+
+
+
+
+
+
+
+
+
+
+

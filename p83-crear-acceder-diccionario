@@ -1,0 +1,18 @@
+# Crear diccionario
+import os
+os.system('cls')
+
+dias = {"1":"Lunes", "2":"Martes", "3":"Miércoles", "4":"Jueves", "5":"Viernes", "6":"Sabado", "7":"Domingo"}
+print((dias),len(dias))
+
+l = dias["1"]  #El primer elemento usando []
+print((l))
+
+d = dias["7"]  #El último elemento usando []
+print((d))
+
+print(dias.get('5')) #El quinto elemento usando get()
+
+print(dias.get("7")) #El séptimo elemento usando get()
+
+print((dias))        #Muestre el diccionario completo.

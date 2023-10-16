@@ -1,0 +1,38 @@
+# Nomina
+import os
+os.system('cls')
+
+Nombres =["Juan", "Pedro", "Manuel", "Elias", "Maria", "Felipe", "Julia", "Roberto"] 
+Sueldos =[4550.22, 8456.88, 1235.12, 9998.00, 12345.50, 29456.55, 12234.00, 2000.00] 
+print(f'Lista de nombres : \n{Nombres}\n')
+print(f'Lista sueldos: \n{Sueldos}\n')
+
+Pagos = dict(zip(Nombres, Sueldos))     #Crear un diccionario con ambas listas
+print(f"\nEl diccionarios es: ",Pagos)  #Mostrar el diccionario resultante
+print() 
+# Iterar por los elementos del diccionario:
+
+for pa in Pagos.keys():                 #Usando las llaves : keys()
+    print(pa) 
+print() 
+
+for t in Pagos.values():            #Usando los valores: values()
+    print(t)                            
+print() 
+
+for k,v in Pagos.items():           #Usando la llave y el valor en base a la llave
+    print(f'{k:<8} - {v:5}')
+print() 
+
+for q in Pagos.items():             #Usando el para llave/valor items()
+    print(q)
+print() 
+
+
+s=p=0
+for m,c in Pagos.items():
+    print(f'{m:<8} - {c:.2f}')
+    s = s + c                       #Obtener lo suma de los sueldos
+p = s / len(Pagos)                  #Obtener el promedio de los sueldos.            
+print(f'\nLa suma: {s} y el promedio: {p:.2f}')
+

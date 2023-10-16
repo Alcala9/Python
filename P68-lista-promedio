@@ -1,0 +1,26 @@
+import os
+os.system('cls')
+
+t = int(input("Dame el tamaño de la lista? "))
+nums = []
+suma = 0
+
+
+for x in range(t):
+    valor=int(input("Ingrese un valor entero: "))
+    nums.append(valor)
+cantidad = len(nums)
+print(f"La cantidad de numeros ingresados son:  {cantidad}")
+print(f"Su lista es:  {nums}")
+
+for n in nums:
+    suma  += n
+print(f"La suma de la lista es:  {suma}")
+
+promedio = suma / cantidad 
+print(f"El promedio es: {promedio}")
+
+
+
+
+
