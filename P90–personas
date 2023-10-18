@@ -20,6 +20,7 @@ print("\nDiferencia simetrica:")
 print("A diferenia simetrica B", A ^ B)
 
 
+
 C = {"Pablo", "Mateo"}
 D = {"Reynaldo,", "Angelica"}
 
