@@ -1,0 +1,34 @@
+import os
+os.system('cls')
+
+A = {"50","60","70","80","90","100","200"}
+B = {"60","90","100","300","400","500"}
+C = {"10","20","60","90","70","100","600","700"}
+
+
+print(A,B,C)
+
+
+print("\n Problemas:")
+
+print("\nUnion: ")
+print("A union B",A | B)
+print("B union C",B | C)
+
+print("\nDiferencia:")
+print("A diferencia C", A - C)
+
+print("\nDiferencia simetrica:")
+print("A diferenia simetrica B", B ^ C)
+
+print("\nIntersección: ")
+print("B interseccion C", B & C)
+
+
+print("\nPreguntas:")
+
+print("A es subconjunto de B ?", A<=B)
+print("C es subconjunto de A ?", C<=A)
+print(" 100 esta en A ?", "100" in A)
+print(" 60 esta en A , y en B y en C ?", "60" in A & B & C)
+print(" 900 no esta en C ?", 900 not in B)

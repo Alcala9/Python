@@ -1,0 +1,33 @@
+# Nos permite ejemplificar las operaciones basicas sobre conjuntos
+
+import os
+os.system('cls')
+muns = {'Zacatecas', 'Guadalupe','Jerez','Fresnillo','Fresnillo'}
+print(muns, len(muns), type(muns))
+
+for mun in muns:
+    print(mun, end=' ')
+
+muns.add("Teul")                     #Agregra Teul a un conjunto
+print ("\n",muns, len(muns))
+
+
+muns.update({"Luis Moya, Ojocaliente, Tepetongo"})  #Agregra Luis Moya, Ojocaliente, Tepetongo al un conjunto
+print (muns, len(muns))
+
+muns.remove('Zacatecas')              #Removemos Zacatecas de conjunto
+print (muns, len(muns))
+
+muns.discard("Cañitas")               #Removemos Cañitas de conjunto 
+muns.discard("Ojocaliente") 
+print (muns, len(muns))
+
+if ("Luis moya" in muns): 
+    print("Si esta")
+else:
+    print("No esta")
+
+muns.pop()                            #Saca al que este primero
+print (muns, len(muns))
+
+muns.clear()                          #Elimina todo     

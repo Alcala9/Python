@@ -111,3 +111,14 @@
 - p85-agregar-diccionario
 - p86-eliminar-diccionario
 - p87-procesar-diccionario
+
+## Actividad 11
+- p88–trabajando-conjuntos
+- p89-operaciones-conjuntos
+
+## Tarea 7 
+- p90–personas
+- p91–numeros
+
+## Examen 2
+- p92-segundo-examen-parcial

@@ -1,0 +1,34 @@
+import os
+os.system('cls')
+
+A = {"Juan", "Maria", "Pedro", "Jose", "Rocio"}
+B = {"Pedro", "Juan", "Pablo", "Mateo", "Esther"}
+print(A,B)
+
+print("\n Problemas:")
+
+print("\nUnion: ")
+print("A union B",A | B)
+
+print("\nIntersección: ")
+print("A interseccion B", A & B)
+
+print("\nDiferencia:")
+print("A diferencia B", A - B)
+
+print("\nDiferencia simetrica:")
+print("A diferenia simetrica B", A ^ B)
+
+
+C = {"Pablo", "Mateo"}
+D = {"Reynaldo,", "Angelica"}
+
+print("\nProbar por subconjuntos:")
+print("Pablo y Mateo es subconjunto de B ?", C<=B)
+
+print("\nProbar por supersubconjuntos:")
+print("A es superconjunto de Reynaldo y Angelica ?", A>=D)
+
+print("\nPreguntas")
+print(" Pedro esta en c1 ?", "Pedro" in A)
+print(" Lilia no esta en c2 ?", "Lilia" not in B)
