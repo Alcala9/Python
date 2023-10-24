@@ -1,0 +1,40 @@
+# Examen parcial 2
+import os
+os.system('cls')
+
+
+Ingredientes = {"T":1.50, "P":3.50, "A":0.40, "Q":3.74, "I":2.10} # Declaramos un dicionario con los valores requeridos
+Subtotal = 0        # Declaramos las variablas a utilizar
+Total = 0           # Declaramos las variablas a utilizar
+Descuento = 0.05    # Declaramos las variablas a utilizar
+
+print('Pizzeria mominos\n')
+Ingrediente=(input("Que desea en su pizza? ")).upper() # Pedimos los ingredientes y ponemos en mayuscula lo dado
+
+
+if  Ingrediente == "": # Si ingredientes no tiene asignado nada imprime linea 16 y 17
+    print("El precio base es de 15, compras de mas de 30 tienen descuentos del 15%") 
+    print("Su pizza puede llevar: \nT - 1.5\nP - 3.5\nA - 0.40\nQ - 3.74\nP - 2.10")
+
+else:                        # Si ingredientes si tiene asignado algo continua el codigo
+   
+    for i in Ingrediente:    # abrimos un c iclo for para saber cuantos ingredientes son 
+        
+        if i not in "TPAQI": # si el valor de ingredientes no esta en el dicionario hace lineas 24 y 25
+            print("Un ingrediente de los elegidos no existe")
+            exit()
+
+        if i  in "TPAQI":    # si el valor de ingredientes si esta en el dicionario hace lineas 28
+            Subtotal = Subtotal + Ingredientes[i]
+    
+    Subtotal = Subtotal + 15    
+        
+    if Subtotal >= 30:      # Si el valor de subtotal es mayor a 30 hace lineas 33, 34, 35
+        Total = Subtotal - (Subtotal * Descuento)
+        print(f"El subtotal es: {Subtotal:.2F}")
+        print(f"El total es   : {Total:.2F}")
+
+    else:                   # Si el valor de subtotal es menor a 30 hace lineas 38,39,40
+        Total = Subtotal
+        print(f"El subtotal es: {Subtotal:.2F}")
+        print(f"El total es   : {Total:.2F}")
