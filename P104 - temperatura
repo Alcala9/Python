@@ -24,4 +24,3 @@ elif op=="C":
 
 else:
     print("Opcion incorrecta")
-    
