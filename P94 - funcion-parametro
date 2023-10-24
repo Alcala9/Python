@@ -1,0 +1,12 @@
+# FUNCION CON PARAMETROS
+
+import os
+os.system('cls')
+# Funcion con parametros
+def saluda(Nombre, edad):
+        print(f"Hola {Nombre} bienvenido a Python, tu nombre tiene {len(Nombre)} caracteristicas y tu edad es {edad}")
+
+# Programa principal
+saluda("Carlos castañeda", 30)
+saluda("Juan Perez Diaz", 10)
+saluda("Maria Soto Garcia", 25)

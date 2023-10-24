@@ -1,0 +1,13 @@
+import os
+os.system('cls')
+
+# Funcion con parametros
+def saludaatodos(*todos):
+    print("Saludos a :", todos)
+    for nombre in todos:
+        print("Hola", nombre)
+    print("El primero es el primero y es", todos[0])
+    print("El ultmo es el ultimo y es", todos[-1])
+
+saludaatodos("Juan", "Pedro", "Luis", "Rocio", "Fatima","Maria","Felipe","Mercedes")
+

@@ -1,0 +1,9 @@
+## p91-funcion
+
+import os
+os.system('cls')
+
+def mifuncion():
+    print("Saludos desde mi función")
+
+mifuncion() # Saludos desde mi función

@@ -1,0 +1,19 @@
+# Funcion que recibe 2 numeros y me regresa la suma
+
+import os
+os.system('cls')
+
+def suma(n1, n2):
+    s = n1 + n2
+    return s
+
+#Programa principal
+sum = suma(100, 200)
+print("La suma es:", sum)
+
+print("La suma es:", suma(900,100))
+
+print("Dame dos numeros :")
+a,b = int(input()), int(input())
+sum = suma(a, b)
+print("La suma es:", sum)

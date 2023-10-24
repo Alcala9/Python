@@ -1,0 +1,15 @@
+import os
+os.system('cls')
+
+# Funcion con parametros
+def saluda(Nombre, Edad, Telefono, Correo):
+        print(f"Bienvenido {Nombre} tu edad es {Edad}, tu telfono es {Telefono} y tu correo es {Correo}", end="")
+        if(Edad>=18): 
+            print(" Eres mayor de edad")
+        else:
+              print(" Eres menor de edad")
+
+
+saluda("Carlos Castaneda",51,"4920920916","castr@uaz.edu.mx")
+saluda("Edgar Vicentino",1,"4920920916","castr@uaz.edu.mx")
+saluda("Lolo Perez",51,"4920920916","castr@uaz.edu.mx")

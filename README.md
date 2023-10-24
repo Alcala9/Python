@@ -122,3 +122,21 @@
 
 ## Examen 2
 - p92-segundo-examen-parcial
+
+## Actividad 12
+- P93 - funcion
+- P94 - funcion-parametro
+- P95 - funcion-parametros
+- P96 - funcion-mas-parametros
+- P97 - funcion-parametros-nombre
+- P98 - funcion-parametros-por-defecto
+- P99 - funcion-parametros-nombre
+- P100 - tabla de multiplicar
+- P101 - cuadro carácter
+- P102 - numero mayor
+- P103 - estación del año
+- P104 - temperatura
+- P105 - suma dígitos
+- P106 - factorial
+- P107 - calificación con letra
+- P108 - suma números en un rango

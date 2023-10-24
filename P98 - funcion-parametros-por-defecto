@@ -1,0 +1,9 @@
+import os
+os.system('cls')
+
+def saluda(nombre="Juan"):
+    print(f"Hola {nombre}")
+
+saluda("Uriel")
+saluda()
+saluda("Maria")

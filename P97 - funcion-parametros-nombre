@@ -1,0 +1,9 @@
+import os
+os.system('cls')
+
+# Funcion con parametros
+def saluda(apaterno, amaterno, nombre):
+    print("Hola {apaterno}, {amaterno}, {nombre}")
+    
+saluda("castaneda", "ramirez", "carlos")
+
