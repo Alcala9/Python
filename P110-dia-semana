@@ -1,0 +1,27 @@
+# Regresa el dia de la semana con letra dependiendo el numero que elija
+import os
+os.system('cls')
+
+def Semana(n):
+    Dia = ""
+
+    if n==1:
+        Dia='Lunes'
+    elif n==2:
+        Dia='Martes'
+    elif n==3:
+        Dia='Miercoles'
+    elif n==4:
+        Dia='Jueves'
+    elif n==5:
+        Dia='Viernes'
+    elif n==6:
+        Dia='Sabado'
+    elif n==7:
+        Dia='Domingo'
+    else:
+        Dia='No es un numero del 1 al 7'
+    return Dia
+
+n = int(input('Dame un numero entre el 1 y el 7 ? '))
+print(f'El dia de la semana es: {Semana(n)}')

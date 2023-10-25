@@ -1,0 +1,27 @@
+# Convierte de Pulgadas a Centimetros y de Metros en Pies
+
+import os
+os.system('cls')
+
+def Pulgadas(Med):
+    return ( Med * 2.54 ) 
+
+def Centimetros(Med):
+    return ( Med * 3.281 ) 
+
+
+print('[ C ] Convertir a Centimetros')
+print('[ P ] Convertir a Pies')
+op = (input("Elige ? ")).upper()
+
+if op=="C" :
+    Med = int(input('Deme una medida en Pulgadas? '))
+    print(f'La medida en centrimetros es: {Pulgadas(Med)}')
+
+elif op=="P":
+    Med = int(input('Deme una medida en Metros? '))
+    print(f'La medida en Pies es: {Centimetros(Med)}')
+
+else:
+    print("Opcion incorrecta")
+    

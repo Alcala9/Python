@@ -1,0 +1,34 @@
+# Suma números en un rango
+import os
+os.system('cls')
+
+
+n1 = int(input("Primer numero? "))
+n2 = int(input("Segundo numero? "))
+letra = (input("[P]ares o [I]mpares? ")).upper()
+
+def sumaPoI(n1, n2, letra):
+    suma = 0
+
+    for i in range(n1, n2 + 1):
+
+        if letra == "P" and i % 2 == 0:
+            suma = suma + i
+
+        elif letra == "I" and i % 2 != 0:
+            suma = suma + i
+
+    return suma
+
+
+sum = sumaPoI(n1, n2, letra)
+if letra == "P":
+    print(f'La suma de los numeros Pares es {sum}')
+
+elif letra == "I":
+    print(f'La suma de los numeros Impares es {sum}')
+
+else:
+    print("No elegiste Pares o Impares")
+
+
