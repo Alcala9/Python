@@ -1,0 +1,41 @@
+# Calcula el mayor y menor de una lista de nuemros usando funciones
+
+import os
+os.system('cls')
+
+def leer():             # Ciclo para pedir e ingresar los numeros
+    datos=[]
+    while True:
+        d=float(input("Ingresa un numero: "))
+        if d==-1:
+            break;
+        datos.append(d)
+    return datos
+
+def menor(lista):       # PAra saber si es menor
+    m = lista[0]
+    for n in lista:
+        if  n < m :
+            m = n
+    return m
+
+def mayor(lista):       # PAra saber si es mayor 
+    m = lista[0]
+    for n in lista:
+        if  n > m :
+            m = n
+    return m
+
+# Programa principal
+
+lista = leer()
+
+print("La lista de números es:", lista, "y tiene", len(lista), "digitos")
+men = menor(lista)
+print(f'El menor es : {men}')
+
+may = mayor(lista)
+print(f'El mayor es : {may}')
+
+
+

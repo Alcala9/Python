@@ -142,7 +142,24 @@
 - P108 - suma-números-en-un-rango
 
 ## Tarea 8
-- P107-numero-menor
-- P108-dia-semana
-- P109-medidas-longitud
-- P110-suma-pares-impares
+- P109-numero-menor
+- P110-dia-semana
+- P111-medidas-longitud
+- P112-suma-pares-impares
+
+## Actividad 13
+- P113-suma
+- P114-pares
+- P115-mayor-menor
+- P116-mayores-promedio
+- P117-pares-impares
+- P118-aleatorios
+- P119-nombres
+- P120-funciones
+- P121-usa-funciones
+- P122-modulos-integrados
+
+## Tarea 9 
+- P123-suma-digitos-lista
+- P124-calcula-factoriales
+- P125-estadisticas-basicas

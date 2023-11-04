@@ -1,0 +1,37 @@
+# Procesar listas de nombres, junta una lista original con una lista introducida por el usuario
+
+import os
+os.system('cls')
+
+
+def procesa(n1, n2):
+    res = []
+    res.extend(n1)
+    res.extend(n2)
+    res.sort(reverse=True)
+
+    for i in range(len(res)):
+        res[i] = res[i].upper()
+    return res
+
+def leer():
+    d = []
+    while True:
+        n = input('Nombre :')
+        if n=='**': 
+            break
+        d.append(n)
+    return d
+
+# Programa principal
+
+n1 = ['Juan', 'Pedro', 'Luis', 'Jose', 'Maria']
+n2 = leer()
+#n2 = ['Lucia', 'Angelica', 'Miguel']
+
+print("La lista 1 es:", n1, "y tiene", len(n1), "digitos")
+print("La lista 2 es:", n2, "y tiene", len(n2), "digitos")
+
+
+todos = procesa(n1, n2)
+print("La lista de todos es:", todos, "y tiene", len(todos), "digitos")

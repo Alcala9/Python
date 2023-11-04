@@ -1,0 +1,31 @@
+#Regresa un lista de pares y otra de impares de una lista de numeros, usando funciones 
+
+import os
+os.system('cls')
+
+def leer():             # Ciclo para pedir e ingresar los numeros
+    datos=[]
+    while True:
+        d=float(input("Ingresa un numero: "))
+        if d==-1:
+            break
+        datos.append(d)
+    return datos
+
+def paresimpares(lista):
+    pares=[]
+    impares=[]
+    for n in lista:
+        if n % 2 == 0: 
+            pares.append(n)
+        else: impares.append(n)
+    return pares, impares
+
+# Programa principal
+#lista = [9, 8, 7.5, 6, 9.5, 7, 10, 6, 7]
+lista = leer()
+print("La lista de números es:", lista, "y tiene", len(lista), "digitos")
+
+pares, impares = paresimpares(lista)
+print("Los pares son: ", pares, "y tiene", len(pares), "digitos")
+print("Los impares son: ", impares, "y tiene", len(impares), "digitos")

@@ -1,0 +1,30 @@
+# Se generan dos listas de numeros aleatorios y los suma
+
+import random
+import os
+os.system('cls')
+
+MAX = 20
+def generaAleatorios():
+    l = []
+    for n in range(MAX):
+        l.append( random.randint(1,100))
+    return l
+
+def sumaListas(l1, l2):
+    suma = []
+    for i in range(MAX):
+        suma.append( l1[i] + l2[i] )
+    return suma
+
+
+
+# programa principal
+l1 = generaAleatorios()
+print("La lista l1 es:", l1, "y tiene", len(l1), "digitos")
+
+l2 = generaAleatorios()
+print("La lista l1 es:", l2, "y tiene", len(l2), "digitos")
+
+suma = sumaListas(l1, l2)
+print("La suma de las listas es:", suma, "y tiene", len(suma), "digitos")

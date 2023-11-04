@@ -9,7 +9,7 @@ def sumadigitos(n):
         dig = n % 10
         suma = suma + dig
         n = n // 10
-        return suma
+    return suma
 
 año = int(input("Dame tu año de nacimiento y te dire tu numero de la suerte: "))
 res = sumadigitos(año)

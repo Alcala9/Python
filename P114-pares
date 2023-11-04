@@ -1,0 +1,26 @@
+# Sacar los pares y asignarlos a una lsita
+
+import os
+os.system('cls')
+
+def pares(lista):
+    p = []
+    for n in lista:
+        if n % 2 == 0:
+            p.append(n)
+    return p
+
+def leer():
+    lista = []
+    while True:
+        n = int(input("Dame un numero: "))
+        if n==-1: break
+        lista.append(n)
+    return lista
+
+# Programa principal:
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista = leer()
+print("La lista es: ",lista, "y mide",len(lista),"digitos")
+res = pares(lista)
+print('Los pares son ', res, len(lista))

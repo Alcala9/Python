@@ -1,0 +1,18 @@
+import P120funciones as pf
+import os
+os.system('cls')
+ 
+l = pf.leer()
+media = pf.media(l)
+var = pf.varianza(l)
+des = pf.desviacion(l)
+numMenor = pf.menor(l)
+numMayor = pf.mayor(l)
+print("La lista de numeros original es:",l)
+print('La media es:', media)
+print('El mayor de los datos es:', numMayor)
+print('El menor de los datos es:', numMenor)
+print('La varianza es:', var)
+print('La desviacion estandar es:', des)
+
+

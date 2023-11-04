@@ -1,0 +1,25 @@
+import P120funciones as pf
+import os
+os.system('cls')
+
+#def recSumDat(lista):
+#    rsd = []
+#    for n in lista:
+#        suma = 0
+#        while n!=0:
+#            dig = n % 10
+#            suma = suma + dig
+#            n = n // 10
+#        rsd.append(suma)
+#    return rsd
+
+
+
+l = pf.leer()
+print("La lista de numeros original es:                    ",l)
+
+datos = pf.recSumDat(l)
+print ("La lista con las sumas de digitos de los numeros es:",datos)
+
+
+
