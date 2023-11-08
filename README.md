@@ -163,3 +163,8 @@
 - P123-suma-digitos-lista
 - P124-calcula-factoriales
 - P125-estadisticas-basicas
+
+## Actividad 14
+- P126-empleado1
+- P127-circulo
+- P128-rectangulo
