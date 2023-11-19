@@ -1,0 +1,100 @@
+import os
+os.system('cls')
+
+class Jugador:
+    def __init__(self, nombre, añoNac, sexo, becado):
+        self.nombre = nombre
+        self.añoNac = añoNac
+        self.sexo = sexo
+        self.becado = becado
+
+    def __str__(self):
+        return f'Nombre: {self.nombre:<19} AñoNac: {self.añoNac:<8} Sexo: {self.sexo:<8}   Becado: {self.becado}'
+
+class Categoria:
+    def __init__(self, nombre, rango, costo):
+        self.nombre = nombre
+        self.rango = rango
+        self.costo = costo
+        self.jugadores = list()
+
+    def agregarJugador(self, jugador):
+        self.jugadores.append(jugador)
+
+    def calcular_subtotal(self):
+        subtotal = sum([jugador.becado == "Sin Beca" for jugador in self.jugadores]) * self.costo
+        return subtotal
+    
+    def __str__(self):
+        return f'Nombre: {self.nombre:<10} rango: {self.rango:<12}   costo: {self.costo}'    
+
+class Academia:
+    def __init__(self, nombre, propietario, domicilio):
+        self.nombre = nombre
+        self.propietario = propietario
+        self.domicilio = domicilio
+        self.categorias = list()
+
+    def agregarCategoria(self, categoria):
+        self.categorias.append(categoria)
+
+
+    def calcular_total_hombres_mujeres(self):
+        total_hombres = sum([sum([1 for jugador in categoria.jugadores if jugador.sexo == "Hombre"]) for categoria in self.categorias])
+        total_mujeres = sum([sum([1 for jugador in categoria.jugadores if jugador.sexo == "Mujer"]) for categoria in self.categorias])
+        return total_hombres, total_mujeres
+
+    def __str__(self):
+        return f'Academia -> [Nombre:{self.Nomnombrebre} Propietario:{self.propietario}, Domicilio: {self.domicilio}]'
+# Programa principal
+os.system('cls')
+
+# Creamos la Academia
+academia = Academia(nombre='Academia Miclo',domicilio='Av Libertad 420',propietario='El Mero Mero')
+
+#Agregamos las categorias necesarias
+academia.agregarCategoria( Categoria(nombre='Junior A',rango='2006/2007/2008',costo=1250.00))
+academia.agregarCategoria( Categoria(nombre='Junior B',rango='2009/2010/2011',costo=850.00))
+academia.agregarCategoria( Categoria(nombre='Pony A',rango='2012/2013/2014',costo=700.00))
+
+#Agregamos los jugadores a las categorias
+academia.categorias[0].agregarJugador(Jugador(nombre='Alexander Lopez',añoNac='2006',sexo='Hombre',becado='Sin Beca'))
+academia.categorias[0].agregarJugador(Jugador(nombre='Uriel Puga',añoNac='2007',sexo='Hombre',becado='Becado'))
+academia.categorias[0].agregarJugador(Jugador(nombre='Alejandra Escalona',añoNac='2008',sexo='Mujer',becado='Sin Beca'))
+
+academia.categorias[1].agregarJugador(Jugador(nombre='Armando Santana',añoNac='2009',sexo='Hombre',becado='Sin Beca'))
+academia.categorias[1].agregarJugador(Jugador(nombre='Daniel Mijares',añoNac='2010',sexo='Hombre',becado='Sin Beca'))
+academia.categorias[1].agregarJugador(Jugador(nombre='Antonio Hernandez',añoNac='2011',sexo='Mujer',becado='Becado'))
+
+academia.categorias[2].agregarJugador(Jugador(nombre='Andrea Solis',añoNac='2012',sexo='Mujer',becado='Becado'))
+academia.categorias[2].agregarJugador(Jugador(nombre='Marissa Hernandez',añoNac='2011',sexo='Mujer',becado='Becado'))
+academia.categorias[2].agregarJugador(Jugador(nombre='Diana Soto',añoNac='2013',sexo='Mujer',becado='Sin Beca'))
+
+
+print('REPORTE DEL CLUB DEPORTIVO:\n')
+
+print(f'Nombre: {academia.nombre}')
+print(f'Propietario:: {academia.propietario}')
+print(f'Domicilio: {academia.domicilio}')
+
+print(f'\nTotal de Categorias: {len(academia.categorias)}')
+total_hombres, total_mujeres = academia.calcular_total_hombres_mujeres()
+print(f"Total de Hombres: {total_hombres}")
+print(f"Total de Mujeres: {total_mujeres}")
+
+
+print(f'\n>> Datos Generales De Las Categorias\n')
+for categoria in academia.categorias:
+    print(categoria)
+print()
+
+for categoria in academia.categorias:
+    print(f'\n{categoria.nombre} - {categoria.rango} - ({len(categoria.jugadores)}) ')
+    for jugador in categoria.jugadores:
+        print(jugador)
+
+    subtotal = categoria.calcular_subtotal()
+    print(f"- SubTotal : ${subtotal:.2f}\n")
+
+total_ingresos = sum([categoria.calcular_subtotal() for categoria in academia.categorias])
+print(f"-> Total : ${total_ingresos:.2f}")
